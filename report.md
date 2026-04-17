@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Diatoms (phylum *Bacillariophyta*) are a diverse group of photosynthetic microalgae that play a critical role in aquatic ecosystems. They contribute significantly to primary production and form the base of many food webs. Because diatom communities respond rapidly to changes in environmental conditions, they are widely used as bioindicators of ecosystem health.
+Diatoms (phylum *Bacillariophyta*) are a diverse group of photosynthetic microalgae that play a critical role in aquatic ecosystems (Medlin, Kooistra, Schmid, 2000). They contribute significantly to primary production and form the base of many food webs. Because diatom communities respond rapidly to changes in environmental conditions, they are widely used as bioindicators of ecosystem health.
 
 Advances in high-throughput sequencing and bioinformatics have enabled detailed characterization of microbial communities, including diatoms, at high taxonomic resolution. Amplicon-based sequencing approaches allow researchers to assess community composition and detect shifts in taxa across environmental gradients.
 
@@ -14,7 +14,7 @@ In this study, diatom community composition was analyzed using paired-end sequen
 
 Raw paired-end sequencing reads were first quality-filtered and trimmed using a custom trimming script. The resulting trimmed reads were then imported into QIIME2 using a manifest file specifying forward and reverse read paths.
 
-Demultiplexed sequences were summarized to assess sequencing quality. Denoising was performed using the DADA2 plugin in QIIME2, which filters low-quality reads, corrects sequencing errors, merges paired-end reads, and removes chimeric sequences. This process produced a feature table of amplicon sequence variants (ASVs) and a representative sequence file.
+Demultiplexed sequences were summarized to assess sequencing quality. Denoising was performed using the DADA2 plugin in QIIME2, which filters low-quality reads, corrects sequencing errors, merges paired-end reads, and removes chimeric sequences (Callahan et al., 2016). This process produced a feature table of amplicon sequence variants (ASVs) and a representative sequence file.
 
 Taxonomic classification was conducted using a pre-trained Naive Bayes classifier specific to diatom barcode sequences. Taxonomy assignments were used to generate a taxa barplot visualization, showing the relative abundance of taxa across all samples.
 
@@ -47,3 +47,9 @@ Future analyses could incorporate environmental metadata to better understand th
 ![Figure 1a: Relative abundance of diatom taxa across samples.](level-7-bars.svg)
 
 ![Figure 1b: Taxonomic legend corresponding to Figure 1a.](level-7-legend.svg)
+
+## References
+
+Callahan, B. J., McMurdie, P. J., Rosen, M. J., Han, A. W., Johnson, A. J. A., & Holmes, S. P. (2016). DADA2: High-resolution sample inference from Illumina amplicon data. Nature methods, 13(7), 581-583.
+
+Medlin, L., Kooistra, W. H., & Schmid, A. M. (2000). A review of the evolution of the diatoms-a total approach using molecules, morphology and geology.
