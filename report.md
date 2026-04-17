@@ -42,7 +42,6 @@ Future analyses could incorporate environmental metadata to better understand th
 
 ## Figure
 
-!## Figure
 
 ![Figure 1a: Relative abundance of diatom taxa across samples.](level-7-bars.svg)
 
